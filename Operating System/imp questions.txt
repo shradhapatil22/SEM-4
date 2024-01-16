@@ -1,0 +1,55 @@
+Chapter 1 
+What os do?
+User view ,system view
+Definition
+Dual mode operations
+Process management
+Types of system calls
+Os structure (me docx)
+Internal external commands
+
+           Chapter 2 
+What is a process
+Process state diagram
+Process control block
+Process scheduling algo
+Process scheduling! Types of schedulers
+Scheduling criterias
+Fork system call
+Unix ,Shell , internal and external commands
+
+
+           Chapter 3 
+Critical section problem
+Peterson problem
+Semaphores
+Wait and signal 
+Types of semaphores
+Disadvantages
+Bounded buffer prblm
+Dining philosophers problem
+Deadlocks 
+Bankers algorithm
+Characteristics of deadlocks
+Resources allocation graph
+How processing can be terminated
+Resource preemption
+
+           Chapter 4 
+Paging! Theory and diagram
+Basic method of paging
+Paging with TLB
+Swapping
+Address binding
+Internal external fragmentation
+Best, worst fit
+Virtual memory
+Demand paging
+Steps to handle page fault
+Page replacement technique
+
+  Chapter 5 
+File management
+Access methods
+File system outing
+

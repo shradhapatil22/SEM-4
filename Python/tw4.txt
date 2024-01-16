@@ -1,0 +1,71 @@
+class Person:
+    def __init__(self, fn, ln, email):
+        self.fname = fn
+        self.lname = ln
+        self.email = email
+
+    def disp(self):
+        print("\n", self.fname, self.lname, self.email)
+
+
+class Customer(Person):
+    def __init__(self, fn, ln, email, cust_no):
+        # super().__init__( fn, ln, email)
+        Person.__init__(self, fn, ln, email)
+        self.cust_no = cust_no
+
+    def disp(self):
+        Person.disp(self)
+        print("Customer no=: ", self.cust_no)
+
+
+class Employee(Person):
+    def __init__(self, fn, ln, email, PAN):
+        Person.__init__(self, fn, ln, email)
+        self.PAN = PAN
+
+    def disp(self):
+        Person.disp(self)
+        print("PAN=: ", self.PAN)
+
+
+def main():
+    choice='y'
+    while choice=='y':
+        fn,ln,email=input("Enter First Name Last Name and email: ").split()
+        print("1:Customer 2:Employee  3:Person ")
+        opt=int(input("Enter your option: "))
+        if opt==1:
+            cust_no=int(input("Enter customer number: "))
+            c = Customer(fn, ln, email, cust_no)
+            show(c)
+        elif opt==2:
+            pan=input("Enter employee PAN: ")
+            e=Employee(fn, ln, email, pan)
+            show(e)
+        elif opt==3:
+            p=Person(fn, ln, email)
+            show(p)
+        else:
+            print("Invalid input")
+            break
+
+        choice=input('Enter "y" to continue and "n" to Terminate ')
+
+    
+
+def show(ob):
+    if isinstance(ob, Customer):
+        print("Customer")
+        ob.disp()
+    elif isinstance(ob, Employee):
+        print("Employee")
+        ob.disp()
+    elif isinstance(ob, Person):
+        print("Person")
+        ob.disp()
+
+
+if __name__ == "__main__":
+    main()
+

@@ -1,0 +1,5 @@
+csv. writer() function returns a writer object that converts the user's data into a delimited string.
+
+writerows(): This method is used to write multiple rows at a time. 
+
+Python ValueError is raised when a function receives an argument of the correct type but an inappropriate value

@@ -1,0 +1,10 @@
+/// insert data
+
+cursor.execute("insert into drug(NAME,COST ,TYPE, BARCODE,MANUFACTURING_DATE,EXPIRIY DATE) values (%s,%s,%s,%s.%s,%s), textFieldVariableName.get()
+
+self.variableName=Stringvar()   //declare text variables 
+
+textvariable=self.variableName // inside the text field 
+
+// for message box
+from tkinter import messagebox
